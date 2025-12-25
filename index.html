@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>cosmoswing | 学びと内的探求・統合のスペース</title>
+    <title>cosmoswing</title>
     <meta name="description" content="心・からだ・意識・暮らし。内側の「ほんとうの声」に耳を澄ませながら、新しい一歩をふみ出したい人のための学びと内的探求・統合のスペースです。">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -180,7 +180,7 @@
                         <li>神奈川県在住。ときどき世界のどこか</li>
                         <li>ロングトレイルや山歩きを通じて「旅するように暮らす」感覚に目覚める</li>
                         <li>体質や遺伝的な個性をふまえた栄養やセルフケアについて探求し、自身の体調と長年向き合ってきた経験をもつ</li>
-                        <li>米国オレゴン州におけるファシリテーター・トレーニングを受講中</li>
+                        <li>米国オレゴン州認定ファシリテーター・トレーニングを受講中</li>
                         <li>日英バイリンガル。翻訳、通訳、英語サポートの実務経験あり</li>
                     </ul>
                     <div class="profile-message-box">
@@ -243,7 +243,7 @@
             <div class="company-card">
                 <table class="company-table">
                     <tr><th>法人名</th><td>cosmoswing（コスモスウィング）合同会社</td></tr>
-                    <tr><th>代表者</th><td>山田 花子（仮名）</td></tr>
+                    <tr><th>代表者</th><td>岩﨑 千帆</td></tr>
                     <tr><th>所在地</th><td>神奈川県三浦郡葉山町（※詳細な住所は必要に応じて開示しています）</td></tr>
                     <tr><th>事業内容</th>
                         <td>
@@ -258,7 +258,7 @@
                     </tr>
                     <tr><th>設立</th><td>2025年11月11日</td></tr>
                     <tr><th>資本金</th><td>200万円</td></tr>
-                    <tr><th>連絡先</th><td>info@cosmoswing.example</td></tr>
+                    <tr><th>連絡先</th><td>info@cosmosw.ing</td></tr>
                 </table>
             </div>
         </div>
@@ -267,22 +267,42 @@
     <section id="contact" class="section section-contact">
         <div class="container">
             <h3 class="section-title">お問い合わせ</h3>
-            <form class="contact-form" onsubmit="event.preventDefault(); alert('送信デモ');">
-                <div class="form-group"><label>お名前（ニックネーム可）</label><input type="text" required></div>
-                <div class="form-group"><label>メールアドレス</label><input type="email" required></div>
-                <div class="form-group"><label>お住まいの地域、タイムゾーン（任意）</label><input type="text"></div>
+            <form class="contact-form" action="https://formsubmit.co/nekomikang@gmail.com" method="POST">
+                <!-- FormSubmitの設定 -->
+                <input type="hidden" name="_subject" value="【cosmoswing】新規お問い合わせ">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_template" value="table">
+                
+                <div class="form-group">
+                    <label>お名前（ニックネーム可）</label>
+                    <input type="text" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label>メールアドレス</label>
+                    <input type="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label>お住まいの地域、タイムゾーン（任意）</label>
+                    <input type="text" name="location">
+                </div>
                 <div class="form-group">
                     <label>ご希望のメニュー</label>
                     <select name="menu">
                         <option value="">選択してください</option>
-                        <option value="language">言語・表現サポート</option>
-                        <option value="integration">インテグレーション・セッション</option>
-                        <option value="nutrition">栄養・体調チューニング</option>
-                        <option value="other">その他・お問い合わせ</option>
+                        <option value="言語・表現サポート">言語・表現サポート</option>
+                        <option value="インテグレーション・セッション">インテグレーション・セッション</option>
+                        <option value="栄養・体調チューニング">栄養・体調チューニング</option>
+                        <option value="その他・お問い合わせ">その他・お問い合わせ</option>
                     </select>
                 </div>
-                <div class="form-group"><label>ご希望の曜日や時間帯</label><input type="text"></div>
-                <div class="form-group"><label>メッセージ（現在のご状況、話してみたいこと）</label><textarea rows="5" required></textarea></div>
+                <div class="form-group">
+                    <label>ご希望の曜日や時間帯</label>
+                    <input type="text" name="preferred_time">
+                </div>
+                <div class="form-group">
+                    <label>メッセージ（現在のご状況、話してみたいこと）</label>
+                    <textarea name="message" rows="5" required></textarea>
+                </div>
                 <p class="note" style="font-size: 0.8rem; margin-bottom: 20px;">
                     ※原則として3営業日以内に返信いたします。<br>
                     ※返信が届かない場合は、迷惑メールフォルダをご確認のうえ、再度ご連絡ください。
